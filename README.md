@@ -1,59 +1,34 @@
 # buzzline-01-case
 
+![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+
 This project introduces streaming data. 
 The Python language includes generators - we'll use this feature to generate some streaming buzzline messages. 
-As the code runs, it will continuously update log file. 
-We'll use a consumer to modify this log file and alert us when a special message is detected. 
+As the code runs, it will continuously update the log file. 
+We'll use a consumer to monitor the log file and alert us when a special message is detected. 
 
-## Task 1. Set Up Your Machine
+## Task 1. Set Up Your Machine & Sign up for GitHub
 
-First, you'll need to set up your machine. 
-Detailed instructions by operating system are provided. 
+We practice professional Python. In each course that uses Python, we use a standard set of popular professional tools. 
+This course uses advanced tools such as Apache Kafka that requires **Python 3.11**. 
+You are encouraged to install and practice with multiple versions. 
+If space is an issue, we only need Python 3.11 for this course. 
 
-1. Install Git.
-2. Install Python **Version 3.11**.
-3. Install VS Code.
-4. Configure Git with user.name and user.email. 
-5. Turn on VS Code File / Autosave.
-6. Install VS Code Extensions (see instructions)
+Follow instructions at [pro-analytics-01](https://github.com/denisecase/pro-analytics-01), **Part 1: Set Up Machine & Sign up for GitHub**.
 
-For detailed instructions, see:
+**Setup is critical.** Follow all steps exactly and verify success before proceeding.  
+Missing or incomplete setup steps can make the course impossible to complete.
 
-- [SETUP-MAC-LINUX.md](docs/SETUP-MAC-LINUX.md)
-- [SETUP-WINDOWS.md](docs/SETUP-WINDOWS.md)
+## Task 2. Initialize a Project
 
-## Python Versions (3.11 for this course)
+Once your machine is ready, you'll copy this template repository into your own GitHub account  
+and create your personal version of the project to run and explore. 
+Name it **buzzline-01-yourname** (replace `yourname` with something unique to you).  
 
-The most current version of Python is 3.13. 
-This course will use advanced tools (such as Kafka) that still require Python 3.11. 
-You are encouraged to install both and practice multiple versions. 
-If space is an issue, we only need 3.11 in this course. 
-For more information, See [PYTHON-VERSIONS.md](docs/PYTHON-VERSIONS.md).
+Follow instructions at [pro-analytics-01](https://github.com/denisecase/pro-analytics-01), **Part 2: Initialize a Project**.
+This will get your project stored safely in the cloud - and ready for work on your machine. 
 
-## Task 2. Copy This Example Project & Change `case` to `yourname` (customized)
-
-Once the tools are installed, copy/fork this project into your GitHub account
-and create your own version of this project to run and experiment with. 
-Name it **buzzline-01-yourname** where yourname is something unique to you.
-Follow the instructions in [FORK-THIS-REPO.md](docs/FORK-THIS-REPO.md).
-
-## Task 3. Manage Local Project Virtual Environment
-
-Python needs a place to keep all the free code we download and use in our projects. 
-For this, we create a .venv folder to hold our local project virtual environment. 
-We create this folder (just once), activate it, and install additional packages listed in requirements.txt. 
-
-Important: After creating, activating, and installing packages into .venv, 
-we must remember to activate .venv every time we open a new terminal. 
-
-Follow the instructions in [MANAGE-VENV.md](docs/MANAGE-VENV.md) to:
-1. Create your .venv
-2. Activate .venv
-3. Install the required dependencies using requirements.txt.
-
-The instructions are repeated in requirements.txt as this file exists in all our projects. 
-
-## Task 4. Generate Streaming Data (Terminal 1)
+## Task 3. Generate Streaming Data (Terminal 1)
 
 Now we'll generate some streaming data. 
 By the way - you've done 90% of the hard work before we even look at code. 
@@ -76,7 +51,7 @@ source .venv/bin/activate
 python3 -m producers.basic_producer_case
 ```
 
-## Task 5. Monitor an Active Log File (Terminal 2)
+## Task 4. Monitor an Active Log File (Terminal 2)
 
 A common streaming task is monitoring a log file as it is being written. 
 This project has a consumer that reads and processes our own log file as log messages arrive. 
