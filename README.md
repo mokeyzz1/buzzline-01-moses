@@ -71,6 +71,9 @@ source .venv/bin/activate
 python3 -m consumers.basic_consumer_case
 ```
 
+## How to Stop the Processes
+Stop a continuous process (kill it) by selecting the terminal and hitting CTRL+c (press CTRL key and c key at the same time). 
+
 ## Save Space
 To save disk space, you can delete the .venv folder when not actively working on this project.
 We can always recreate it, activate it, and reinstall the necessary packages later. 
